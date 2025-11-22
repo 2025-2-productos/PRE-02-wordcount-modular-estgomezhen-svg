@@ -17,7 +17,7 @@ def test_homework():
         "homework/src/_internals/write_word_counts.py",
     ]:
         if not os.path.exists(path):
-            raise Exception(f"'{path}' directory does not exist")
+            raise Exception(f"'{path}' directory does not exist")s
 
     try:
         subprocess.run(
