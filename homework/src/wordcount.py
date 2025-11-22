@@ -8,10 +8,14 @@ from ._internals.write_word_counts import write_count_words
 
 
 def main():
-    if len(sys.argv) != 3:
-        print("Usage: python3 -m homework <input/folder> <output/folder>")
-        sys.exit(1)
 
+    if len(sys.argv) != 3:
+        print("Usage: python -m homework <input_folder> <output_folder>")
+        # sys.exit(1)
+        return
+
+    # input_folder = "data/input/"
+    # output_folder = "data/output/"
     input_folder = sys.argv[1]
     output_folder = sys.argv[2]
 
