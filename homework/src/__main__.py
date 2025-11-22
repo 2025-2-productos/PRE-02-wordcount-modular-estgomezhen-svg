@@ -2,7 +2,7 @@
 
 # python3 -m homework data/input data/output
 
-from homework.src.wordcount import main
+from .wordcount import main
 
 if __name__ == "__main__":
     main()
