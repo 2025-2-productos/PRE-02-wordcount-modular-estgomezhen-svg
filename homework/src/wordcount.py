@@ -1,17 +1,15 @@
-# dentro de homework/src/wordcount.py
-
 import sys
 
 from ._internals.count_words import count_words
 from ._internals.preprocess_lines import preprocess_lines
 from ._internals.read_all_lines import read_all_lines
 from ._internals.split_into_words import split_into_words
-from ._internals.write_word_counts import write_count_words  # ojo al nombre
+from ._internals.write_word_counts import write_count_words
 
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage: python3 -m homework <input_folder> <output_folder>")
+        print("Usage: python3 -m homework <input/folder> <output/folder>")
         sys.exit(1)
 
     input_folder = sys.argv[1]
